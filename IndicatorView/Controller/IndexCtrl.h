@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IndexCtrl : UICollectionViewController
+@interface IndexCtrl : UIViewController
 
 @end
