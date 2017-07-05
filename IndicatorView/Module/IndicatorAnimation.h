@@ -18,22 +18,39 @@
 
 
 
-
-
-
-
-
 @interface IndicatorBounceSpot1Animation : IndicatorAnimation
 
 @end
 
 
 
-
-
-
-
-
 @interface IndicatorBounceSpot2Animation : IndicatorAnimation
 
 @end
+
+
+
+@interface IndicatorCyclingLineAnimation : IndicatorAnimation
+
+@end
+
+
+
+@interface IndicatorCyclingCycleAnimation : IndicatorAnimation
+
+@end
+
+
+
+@interface IndicatorMusic1Animation : IndicatorAnimation
+
+@end
+
+
+
+@interface IndicatorMusic2Animation : IndicatorAnimation
+
+@end
+
+
+

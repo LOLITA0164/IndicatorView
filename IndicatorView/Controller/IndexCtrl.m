@@ -33,21 +33,37 @@
     
     self.title = @"IndicatorView";
     
-    NSInteger num = 1;
+    NSInteger num = 6;
     
     CGFloat x = [UIScreen mainScreen].bounds.size.width/3.0;
     CGFloat y = [UIScreen mainScreen].bounds.size.height/5.0;
     
     for (int i=0; i<num; i++) {
         
-        NSInteger row = i % 2;
-        NSInteger line = ceilf(i/2.0);
+        NSInteger line = i % 2;
+        NSInteger row = ceilf((i+1)/2.0);
+ 
         
-        IndicatorView *indicator = [[IndicatorView alloc] initWithType:i];
-        indicator.center = CGPointMake(x*(row+1), y*line);
+        
+        
+        IndicatorView *indicator = [[IndicatorView alloc] initWithType:i tintColor:[UIColor redColor] size:CGSizeMake(40, 40)];
+        [self.view addSubview:indicator];
         [indicator startAnimating];
         
-        [self.view addSubview:indicator];
+        
+        
+        
+        
+        
+        
+        indicator.center = CGPointMake(x*(line+1), y*row);
+        
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [indicator stopAnimating];
+        });
+        
+        
         
     }
     
