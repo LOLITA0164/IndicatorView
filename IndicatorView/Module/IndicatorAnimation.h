@@ -30,13 +30,25 @@
 
 
 
+@interface IndicatorBounceSpot3Animation : IndicatorAnimation
+
+@end
+
+
+
 @interface IndicatorCyclingLineAnimation : IndicatorAnimation
 
 @end
 
 
 
-@interface IndicatorCyclingCycleAnimation : IndicatorAnimation
+@interface IndicatorCyclingCycle1Animation : IndicatorAnimation
+
+@end
+
+
+
+@interface IndicatorCyclingCycle2Animation : IndicatorAnimation
 
 @end
 

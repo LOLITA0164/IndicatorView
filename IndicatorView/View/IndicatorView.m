@@ -69,6 +69,7 @@
         
     }
     
+    
     self.isAnimating = YES;
 }
 
@@ -90,13 +91,17 @@
             return [[IndicatorBounceSpot1Animation alloc] init];
         case IndicatorTypeBounceSpot2:
             return [[IndicatorBounceSpot2Animation alloc] init];
-        case IndicatorCyclingLine:
+        case IndicatorTypeBounceSpot3:
+            return [[IndicatorBounceSpot3Animation alloc] init];
+        case IndicatorTypeCyclingLine:
             return [[IndicatorCyclingLineAnimation alloc] init];
-        case IndicatorCyclingCycle:
-            return [[IndicatorCyclingCycleAnimation alloc] init];
-        case IndicatorMusic1:
+        case IndicatorTypeCyclingCycle1:
+            return [[IndicatorCyclingCycle1Animation alloc] init];
+        case IndicatorTypeCyclingCycle2:
+            return [[IndicatorCyclingCycle2Animation alloc] init];
+        case IndicatorTypeMusic1:
             return [[IndicatorMusic1Animation alloc] init];
-        case IndicatorMusic2:
+        case IndicatorTypeMusic2:
             return [[IndicatorMusic2Animation alloc] init];
         default:
             break;

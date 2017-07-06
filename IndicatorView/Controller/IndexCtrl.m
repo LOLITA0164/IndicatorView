@@ -33,7 +33,7 @@
     
     self.title = @"IndicatorView";
     
-    NSInteger num = 6;
+    NSInteger num = 8;
     
     CGFloat x = [UIScreen mainScreen].bounds.size.width/3.0;
     CGFloat y = [UIScreen mainScreen].bounds.size.height/5.0;
@@ -46,7 +46,7 @@
         
         
         
-        IndicatorView *indicator = [[IndicatorView alloc] initWithType:i tintColor:[UIColor redColor] size:CGSizeMake(40, 40)];
+        IndicatorView *indicator = [[IndicatorView alloc] initWithType:i];
         [self.view addSubview:indicator];
         [indicator startAnimating];
         
