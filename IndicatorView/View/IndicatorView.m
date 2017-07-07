@@ -103,10 +103,13 @@
             return [[IndicatorMusic1Animation alloc] init];
         case IndicatorTypeMusic2:
             return [[IndicatorMusic2Animation alloc] init];
+        case IndicatorTypeStock:
+            return [[IndicatorStockAnimation alloc] init];
         default:
             break;
     }
 }
+
 
 
 #pragma mark - CAAnimation delegate

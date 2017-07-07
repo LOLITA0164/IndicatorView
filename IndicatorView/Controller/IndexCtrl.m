@@ -33,10 +33,10 @@
     
     self.title = @"IndicatorView";
     
-    NSInteger num = 8;
+    NSInteger num = 9;
     
     CGFloat x = [UIScreen mainScreen].bounds.size.width/3.0;
-    CGFloat y = [UIScreen mainScreen].bounds.size.height/5.0;
+    CGFloat y = [UIScreen mainScreen].bounds.size.height/6.0;
     
     for (int i=0; i<num; i++) {
         
